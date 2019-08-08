@@ -22,3 +22,5 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+print(calendar.TextCalendar().formatmonth(1984, 5))
