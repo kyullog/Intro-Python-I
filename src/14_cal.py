@@ -23,4 +23,19 @@ import sys
 import calendar
 from datetime import datetime
 
-print(calendar.TextCalendar().formatmonth(1984, 5))
+input = sys.argv
+input_length = len(input)
+
+
+def get_calendar(month=datetime.today().month, year=datetime.today().year):
+    print(calendar.TextCalendar().formatmonth(year, month))
+
+
+if(input_length < 2):
+    get_calendar()
+elif(input_length < 3):
+    get_calendar(int(input[1]))
+elif(input_length < 4):
+    get_calendar(int(input[1]), int(input[2]))
+else:
+    print("Please input a month int, and a year int")
