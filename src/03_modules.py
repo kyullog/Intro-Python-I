@@ -5,6 +5,7 @@ methods, and the os module, which gives you access to lower-
 level operating system functionality.
 """
 
+import os
 import sys
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
@@ -12,18 +13,16 @@ import sys
 # YOUR CODE HERE
 
 
-
 # Print out the OS platform you're using:
 # YOUR CODE HERE
 
-print("OS: " ,sys.platform)
+print("OS: ", sys.platform)
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
 
 print("Current Python version: ", sys.version)
 
-import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
