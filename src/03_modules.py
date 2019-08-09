@@ -13,6 +13,8 @@ import sys
 # YOUR CODE HERE
 
 print(sys.argv)
+for i in sys.argv:
+    print(i)
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
