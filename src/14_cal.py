@@ -22,3 +22,19 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+commands = sys.argv
+com_length = len(commands)
+
+
+def get_calendar(month=datetime.today().month, year=datetime.today().year):
+    print(calendar.TextCalendar().formatmonth(year, month))
+
+if com_length < 2:
+    get_calendar()
+elif com_length < 3:
+    get_calendar(int(commands[1]))
+elif com_length < 4:
+    get_calendar(int(commands[1]), int(commands[2]))
+else:
+    print("Please input a month int, and a year int")
